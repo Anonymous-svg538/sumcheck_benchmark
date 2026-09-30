@@ -75,7 +75,7 @@ For example:
 1 2 3 4
 
 
-represents a multilinear polynomial with four evaluations.
+represents a 2-variable multilinear polynomial with four evaluations.
 
 The program inverts them into elements of F17 and computes the sum of the evaluations over the Boolean hypercube, the sum H with the given evaluations. 
 
