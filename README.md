@@ -21,25 +21,44 @@ The project uses selected components from the [Plonky3](https://github.com/Plonk
 
 .
 ├── benches/
+
 │   ├── sumcheck_full.rs
+
 │   └── sumcheck_prover.rs
+
 ├── crates/
+
 │   ├── challenger/
+
 │   ├── field/
+
 │   ├── keccak/
+
 │   ├── matrix/
+
 │   ├── maybe-rayon/
+
 │   ├── multilinear-util/
+
 │   ├── symmetric/
+
 │   └── util/
+
 ├── src/
+
 │   ├── f17.rs
 │   ├── lib.rs
+
 │   ├── main.rs
+
 │   ├── prover.rs
+
 │   └── verifier.rs
+
 ├── tests/
+
 ├── Cargo.toml
+
 └── Cargo.lock
 
 
