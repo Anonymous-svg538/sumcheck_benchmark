@@ -1,0 +1,12 @@
+[package]
+name = "p3-util"
+description = "A collection of utility functions and tools for low-level operations, such as bit manipulation and array transformations."
+version.workspace = true
+edition.workspace = true
+
+[features]
+parallel = ["p3-maybe-rayon/parallel"]
+
+[dependencies]
+p3-maybe-rayon = { path = "../maybe-rayon" }
+serde.workspace = true

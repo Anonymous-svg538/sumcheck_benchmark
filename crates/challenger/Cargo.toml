@@ -1,0 +1,21 @@
+[package]
+name = "p3-challenger"
+description = "A Fiat–Shamir transcript and challenger framework used to derive random challenges in proof systems."
+version.workspace = true
+edition.workspace = true
+
+[features]
+parallel = ["p3-maybe-rayon/parallel"]
+# Shared transcript-seed checks, pulled in as a dev-dependency by consumers.
+test-utils = []
+
+[dependencies]
+p3-field = { path = "../field" }
+p3-keccak = { path = "../keccak" }
+p3-maybe-rayon = { path = "../maybe-rayon" }
+p3-symmetric = { path = "../symmetric" }
+p3-util = { path = "../util" }
+
+thiserror.workspace = true
+tracing.workspace = true
+

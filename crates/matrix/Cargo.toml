@@ -1,0 +1,18 @@
+[package]
+name = "p3-matrix"
+description = "A matrix library providing common matrix operations and traits for finite field elements."
+version.workspace = true
+edition.workspace = true
+
+[features]
+parallel = ["p3-maybe-rayon/parallel"]
+
+[dependencies]
+
+itertools.workspace = true
+p3-field = { path = "../field" }
+p3-maybe-rayon = { path = "../maybe-rayon" }
+p3-util = { path = "../util" }
+rand.workspace = true
+serde = { workspace = true, features = ["derive"] }
+tracing.workspace = true
